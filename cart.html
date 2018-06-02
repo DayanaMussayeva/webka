@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cart</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +7 701 110 64 00</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									US
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="indexru.html">RU</a></li>
+									<li><a href="indexkz.html">KZ</a></li>
+								</ul>
+							</div>
+							
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									Dollars
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="indexrub.html">Rubles</a></li>
+									<li><a href="indexkaz.html">KZ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="cart.html" class="active"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html">Home</a></li>
+								<li class="dropdown"><a href="product-details.html">Lenses<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                    	<li><a href="product-details.html" >Contact lenses</a></li>
+                                        <li><a href="product-detailsc.html" >Color contact lenses</a></li> 										
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="product-detailss.html">Сontact lens solution</a></li> 
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+
+	<section id="cart_items">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Shopping Cart</li>
+				</ol>
+			</div>
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Item</td>
+							<td class="description"></td>
+							<td class="price">Price</td>
+							<td class="quantity">Quantity</td>
+							<td class="total">Total</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/cart/one.png" alt=""></a>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/cart/two.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Lenses</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/cart/three.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Lenses</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section> <!--/#cart_items-->
+
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>TOP sellers</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href='http://www.visiondirect.co.uk/everclear-adm'>everclear ADM</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/1-day-acuvue-moist'>1 Day Acuvue Moist</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/focus-dailies-all-day-comfort'>Focus Dailies All Day Comfort</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/1-day-acuvue-trueye'>1 Day Acuvue Trueye</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/acuvue-oasys'>Acuvue Oasys</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/1-day-acuvue'>1 Day Acuvue</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/focus-dailies-toric'>Focus Dailies Toric</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/focus-dailies-aquacomfort-plus'>Focus Dailies Aquacomfort Plus</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/air-optix-aqua'>Air Optix Aqua</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/soflens-daily-disposable'>Soflens Daily Disposable</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/1-day-acuvue-moist-for-astigmatism'>1 Day Acuvue Moist for Astigmatism</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Glasses</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href='http://www.visiondirect.co.uk/glasses'>Order glasses online</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/glasses/cheap-glasses'>View our range of cheap glasses</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/glasses/mens-glasses'>Men's glasses</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/glasses/womens-glasses'>Women's glasses</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/glasses/glasses-frames'>View our range of frames</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href='http://www.visiondirect.co.uk/coupon-voucher-code'>10% Off Your 1st Order</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/why-choose-visiondirect'>Why choose Vision Direct?</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/no-prescription-needed'>No prescription needed</a></li>
+                    			
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Info lenses</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href='http://www.visiondirect.co.uk/contact-lenses'>Compare contact lenses</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/contact-lenses/how-to-put-in-contact-lenses'>How to put in contacts</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/contact-lenses/how-to-take-out-contact-lenses'>How to take out contacts</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/the-human-eye'>The human eye: How we see</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/eye-care-centre'>Eye care information centre</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/eye-care-centre/understanding-your-contact-lens-prescription'>Understanding your prescription</a></li>
+                   				<li><a href='http://www.visiondirect.co.uk/contact-lens-guide'>Upgrading your contact lenses</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/brand/boots-contact-lenses'>Boots contact lenses</a></li>
+                    			<li><a href='http://www.visiondirect.co.uk/brand/specsavers-contact-lenses'>Specsavers equivalent contact lenses</a></li>
+							</ul>
+						</div>
+					</div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-right">Designed by Dayana</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	
+
+
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
